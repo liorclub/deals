@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://heroku:8c7c775f4d89af8a74bca6f7ccec774b@linus.mongohq.com:10001/app30363847',
+  db: 'mongodb://admin:Aa123456!@linus.mongohq.com:10001/app30363847',
   mongoose: {
     debug: true
   },
