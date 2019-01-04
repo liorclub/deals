@@ -1,6 +1,6 @@
 pipeline:
 
-  build-image:
+  build:
     image: nginx:alpine
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
