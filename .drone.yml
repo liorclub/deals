@@ -1,6 +1,15 @@
-pipeline:
+kind: pipeline
+name: default
 
-  build:
-    image: nginx:alpine
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+steps:
+- name: frontend
+  image: node
+  commands:
+  - npm install
+  - npm test
+
+- name: backend
+  image: golang
+  commands:
+  - go build
+  - go test
